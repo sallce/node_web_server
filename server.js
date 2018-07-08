@@ -59,6 +59,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.html',{
+    pageTitle: "Projects"
+  });
+});
+
 app.get('/json', (req, res) => {
   res.send({
     name: "Kyle Shang",
